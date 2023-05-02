@@ -32,27 +32,3 @@ myButton.onclick = () => {
     setUserName();
 };
 
-// Check if the user has already created an account
-if (localStorage.getItem('hasAccount')) {
-    alert('You already have an account!');
-  } else {
-    // Create the account
-    localStorage.setItem('hasAccount', true);
-  }
-
-  function validateForm() {
-    // Check if the user has already created an account
-    if (localStorage.getItem('hasAccount')) {
-      alert('You already have an account!');
-      return false;
-    } else {
-      // Create the account
-      localStorage.setItem('hasAccount', true);
-      return true;
-    }
-  }
-
-
-
-//  the if(!localStorage.getItem) the ! checks if that data exists, for example: if(!localStorage.getItem("tracing"))
-// then do this and that.
