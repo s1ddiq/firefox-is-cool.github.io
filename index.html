@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firefox - My Test Page</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+</head>
+<body>
+    <div class="introScresen box-container"><div class="screen_elements"><h1>Mozilla is cool</h1>
+
+        <img src="/images/firefox.png" alt="My test image"></div>
+        
+        <div class="container important_elements">
+            <p>At <span class="markered_word">M<span class="custom_word">ozilla,</span></span> we're a global community of:</p>
+        
+            <ul>
+                <li class="underlined_word"><span class="markered_word"><strong> </strong>Technologists</span></li>
+                 <li class="underlined_word"><span class="markered_word"><strong> </strong>Thinkers</span></li>
+                 <li class="underlined_word"><span class="markered_word"><strong> </strong>Builders</span></li>
+            </ul>
+            
+            <p>working together to keep the Internet alive and accessible just like this page, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual <a href="#" class="underlined_word">growth</a> and our collective future.</p>
+            
+            <p>Read the<a href="https://www.mozilla.org/en-US/about/manifesto/" class="underlined_word"> Mozzila Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
+            
+            <button class="join-now" id="join-btn-cta">Put your name up there, (it's free)</span></button>
+            <div class="hidden_element"></div>
+        </div>
+    </div>    
+</div>
+
+<details>
+    <summary>Create An Account</summary>
+
+    <div class="user-sign-up">
+        <form onsubmit="return validateform()">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required>
+
+            <label for="username">Username:</label>
+            <input type="text" class="user" name="username" id="username"><br><br>
+    
+            <label for="password">Password:</label>
+            <input type="password" class="password" name="password" id="password" required><br><br>
+    
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+</details>
+
+<details>
+    <summary>Account Login</summary>
+
+    <div class="user-login">
+        <form>
+            <label for="email-login">Email:</label>
+            <input type="text" name="email-login" id="email-login"><br><br>
+
+            <label for="password-login">Password:</label>
+            <input type="text" name="password-login" id="password-login"><br><br>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</details>
+
+<details>
+    <summary>Source Code</summary>
+
+    <h2>source code not available at the moment, check back later!</h2>
+</details>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>

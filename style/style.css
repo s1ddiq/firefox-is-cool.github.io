@@ -1,0 +1,269 @@
+
+/* THE CIRCLE ON THE MOZILLA FIREFOX REPRESENTS A CHANGE IN YOUR CODE, 
+THIS IS A SECURITY BREACH SO WE CAN RECORD ANY CHANGES FROM 3RD PARTY SERVICES. */
+html {
+    font-family: "Open Sans", sans-serif;
+    background-color: #00539f;
+}
+
+body {
+    margin: 1.2% auto 0.67em;
+    background-color: #ff9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+    /* widths for container */
+    width: 600px;
+    overflow: auto;
+    height: auto;
+}
+
+.introScreen {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    transform: translateX(250%);
+    animation: introLoad 1s ease forwards;
+    opacity: 0.2;
+    padding: 20px;
+} 
+
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    /*  */
+    margin: 0;
+    padding: 20px 0;
+    color: #7700ff;
+    text-shadow: 3px 3px 1px black;
+}
+
+p, li {
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+span.markered_word {
+    font-weight: 700;
+    color: #7700ff;
+}
+
+span.custom_word {
+    color: #650dc9;
+}
+
+.underlined_word {
+    font-weight: 700;
+    text-decoration-thickness: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    color: #650dc9;
+}
+
+a.underlined_word {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    color: #650dc9;
+}
+
+.underlined_word:hover {
+    background-color: white;
+}
+
+
+
+ul {
+    padding-left: 16.2px;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 25em;
+    border-radius: 50%;
+    border: 1px solid black;
+    animation: removeAllBorders 1s ease forwards;
+}
+
+li span.markered_word strong {
+    --main-animation: bobbing;
+}
+
+button.join-now {
+    background-color: #7700ff;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    /*  */
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid black;
+    /*  */
+    transition: all 0.2s ease-out;
+}
+
+button.join-now:hover {
+    transition: all 0.2s ease-out;
+    background-color: #650dc9;
+    border-bottom: 2px solid white;
+}
+/* form and other details beyond this point */
+
+details {
+    color: #7700ff;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.user-sign-up {
+    margin-top: 20px;
+    color: #7700ff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.user-sign-up input {
+    width: 150px;
+    height: 25px;
+    font-size: 15px;
+    border: 2px solid #650dc9;
+}
+
+.user-sign-up label {
+    display: block;
+    margin-right: 10px;
+}
+
+.user-sign-up button[type="submit"] {
+    background-color: #7700ff;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    /*  */
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid black;
+    /*  */
+    transition: all 0.2s ease-out;
+}
+
+
+
+.user-sign-up button[type="submit"]:hover {
+    transition: all 0.2s ease-out;
+    background-color: #650dc9;
+    border-bottom: 2px solid white;
+}
+
+/* new form "login" */
+
+    .user-login {
+        margin-top: 20px;
+        color: #7700ff;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    .user-login input {
+        width: 150px;
+        height: 25px;
+        font-size: 15px;
+        border: 2px solid #650dc9;
+    }
+    
+    .user-login label {
+        display: block;
+        margin-right: 10px;
+    }
+    
+    .user-login button[type="submit"] {
+        background-color: #7700ff;
+        color: white;
+        font-size: 15px;
+        padding: 10px;
+        /*  */
+        border-radius: 0;
+        border: none;
+        border-bottom: 2px solid black;
+        /*  */
+        transition: all 0.2s ease-out;
+    }
+    
+    
+    
+    .user-login button[type="submit"]:hover {
+        transition: all 0.2s ease-out;
+        background-color: #650dc9;
+        border-bottom: 2px solid white;
+    }
+    
+
+/* end of forms */
+/* other styles and responsive design past this point */
+
+@media screen and (max-width:695px) {
+    p, li {
+        font-size: 12px;
+    }
+
+    body {
+        width: 400px;
+        height: auto;
+    }
+
+    img {
+        width: 15em;
+    }
+}
+
+
+
+@media screen and (max-width:389px) {
+    p, li {
+        font-size: 10px;
+    }
+    body {
+        width: 200px;
+        height: auto;
+        margin: 1.2% auto 0.67em;
+        overflow: auto;
+    }
+
+    img {
+    width: 10em;
+    } 
+
+    a {
+        width: 10px;
+    }
+}
+
+  @keyframes introLoad { 
+    to {
+        transform: translateX(0);
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        background-color: transparent;
+        padding: 20px;
+    }
+} 
+
+@keyframes removeAllBorders {
+    to {
+        transition: all 0.3s ease;
+        border: none;
+    }
+}
+
+/* the body is a block element. */
