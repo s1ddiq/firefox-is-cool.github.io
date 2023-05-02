@@ -38,7 +38,6 @@ if (localStorage.getItem('hasAccount')) {
   } else {
     // Create the account
     localStorage.setItem('hasAccount', true);
-    alert('Account created successfully!');
   }
 
   function validateForm() {
@@ -49,7 +48,6 @@ if (localStorage.getItem('hasAccount')) {
     } else {
       // Create the account
       localStorage.setItem('hasAccount', true);
-      alert('Account created successfully!');
       return true;
     }
   }
